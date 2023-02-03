@@ -1,7 +1,7 @@
 # 拉格朗日插值法
 
 import pandas as pd
-from scipy.interpolate import lagrange
+from scipy.interpolate import lagrsange
 
 #初始化参数
 inputfile = './data/missing_data.xls'
