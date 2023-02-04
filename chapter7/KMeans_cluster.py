@@ -15,10 +15,10 @@ print(kmodel.labels_)
 demo = pd.DataFrame(kmodel.labels_, columns=['numbers'])
 demo1= pd.DataFrame(kmodel.cluster_centers_, columns=data.columns) # 保存聚类中心
 demo2= demo['numbers'].value_counts() # 确定各个类的数目
+print(demo1)
 print(demo2)
 
 demo4 = pd.concat([demo2, demo1], axis=1)
 demo4.index.name='labels'
 demo4.to_excel('./tmp/kmeansresults.xlsx')
-
 
